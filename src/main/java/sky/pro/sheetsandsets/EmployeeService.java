@@ -1,7 +1,11 @@
 package sky.pro.sheetsandsets;
 
+import java.util.Collection;
+
 public interface EmployeeService {
     Employee add(String firstName, String lastName);
     Employee remove(String firstName, String lastName);
-    Employee finde(String firstName, String lastName);
+    Employee find(String firstName, String lastName);
+
+    Collection<Employee> findAll();
 }
